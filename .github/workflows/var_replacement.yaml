@@ -9,6 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         name: Checkout Code
+        
+      - name: print config after replacement
+        run: |
+          cat config/config.yaml
 
       - uses: microsoft/variable-substitution@v1
         name: Toggle config.yaml
