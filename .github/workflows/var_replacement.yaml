@@ -1,9 +1,6 @@
 name: MS Var replacement
 
-on:
-  push:
-    branches:
-      - main
+on: [workflow_dispatch]
 
 jobs:
   VarReplacement:
